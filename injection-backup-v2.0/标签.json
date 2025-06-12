@@ -1,0 +1,418 @@
+{
+  "mindmap": {
+    "meta": {
+      "name": "新内容脑图",
+      "author": "NodeMind",
+      "version": "1.0.0"
+    },
+    "format": "node_tree",
+    "data": {
+      "id": "new_root_1749671705140",
+      "topic": "🧠 中心节点",
+      "expanded": true,
+      "children": [
+        {
+          "id": "7619e4092d7f0576",
+          "topic": "标签",
+          "expanded": true,
+          "direction": "right",
+          "children": [
+            {
+              "id": "763da7355e705b26",
+              "topic": "常规",
+              "expanded": true,
+              "children": [
+                {
+                  "id": "7619e83a0f2e54e7",
+                  "topic": "项目",
+                  "expanded": true
+                },
+                {
+                  "id": "7619e75091213ca3",
+                  "topic": "里程碑",
+                  "expanded": true
+                },
+                {
+                  "id": "7619e5105d9c0f1b",
+                  "topic": "完成",
+                  "expanded": true
+                },
+                {
+                  "id": "7619ee9075557e56",
+                  "topic": "进行中",
+                  "expanded": true
+                },
+                {
+                  "id": "7619efe63876b704",
+                  "topic": "计划",
+                  "expanded": true
+                }
+              ]
+            },
+            {
+              "id": "763dabf3d5504747",
+              "topic": "AI标记",
+              "expanded": true,
+              "tagGroups": {
+                "regular": [],
+                "ai_dev": []
+              },
+              "children": [
+                {
+                  "id": "763f6fb672eb0ffa",
+                  "topic": "记忆",
+                  "expanded": true
+                },
+                {
+                  "id": "763f70d12ec2a764",
+                  "topic": "注意力",
+                  "expanded": true
+                },
+                {
+                  "id": "763f730703e28c1f",
+                  "topic": "犯坏",
+                  "expanded": true
+                },
+                {
+                  "id": "763f7454b07fd6fa",
+                  "topic": "幻觉",
+                  "expanded": true
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "nodeDetails": {
+    "new_root_1749671705140": {
+      "id": "new_root_1749671705140",
+      "title": "🧠 中心节点",
+      "content": "",
+      "relations": {
+        "parent": null,
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/12 上午3:55:05",
+        "updated": "2025/6/12 上午3:55:05"
+      },
+      "details": {
+        "description": "",
+        "implementation": "",
+        "testing": "",
+        "notes": ""
+      }
+    },
+    "virtual_center_1749525824037_u84wulbb2": {
+      "id": "virtual_center_1749525824037_u84wulbb2",
+      "title": "📌 WORKSPACE 中心",
+      "content": "",
+      "relations": {
+        "parent": "7570898ce2f28be4",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/12 上午3:55:18",
+        "modified": "2025/6/12 上午3:55:18"
+      },
+      "author": ""
+    },
+    "7608f609958d9fdb": {
+      "id": "7608f609958d9fdb",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749525824037_u84wulbb2",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/12 上午3:55:33",
+        "modified": "2025/6/12 上午3:55:33"
+      },
+      "author": ""
+    },
+    "7619e5105d9c0f1b": {
+      "id": "7619e5105d9c0f1b",
+      "title": "验收",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 上午8:51:16",
+        "modified": "2025/6/12 上午8:51:16"
+      },
+      "author": ""
+    },
+    "7619e83a0f2e54e7": {
+      "id": "7619e83a0f2e54e7",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 上午8:51:21",
+        "modified": "2025/6/12 上午8:51:21"
+      },
+      "author": ""
+    },
+    "7619ee9075557e56": {
+      "id": "7619ee9075557e56",
+      "title": "进行中",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 上午9:25:26",
+        "modified": "2025/6/12 上午9:25:26"
+      },
+      "author": ""
+    },
+    "virtual_center_1749526667300_r18kfa0zl": {
+      "id": "virtual_center_1749526667300_r18kfa0zl",
+      "title": "📌 PROJECT 中心",
+      "content": "",
+      "relations": {
+        "parent": "new_root_1749519634001",
+        "children": [
+          "757ec59b0fb95687",
+          "7597edb8436f1603",
+          "759804a3234e0d6f",
+          "759825ab4fa52976",
+          "75a5358638dc6b8f",
+          "75a55ce66441e1d6",
+          "7608e10098e37a7f"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 上午9:51:44",
+        "modified": "2025/6/12 上午9:52:12"
+      },
+      "author": ""
+    },
+    "7619e4092d7f0576": {
+      "id": "7619e4092d7f0576",
+      "title": "标签",
+      "content": "标签分类节点",
+      "relations": {
+        "parent": "new_root_1749671705140",
+        "children": [
+          "7619e5105d9c0f1b",
+          "7619e75091213ca3",
+          "7619e83a0f2e54e7",
+          "7619ee9075557e56",
+          "7619efe63876b704"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 上午9:59:30",
+        "modified": "2025/6/12 上午10:20:35"
+      },
+      "author": "系统"
+    },
+    "75a5358638dc6b8f": {
+      "id": "75a5358638dc6b8f",
+      "title": "热重载机制不能对于新增的模块或者某些“系统死角”无法发挥作用。",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:13:24",
+        "modified": "2025/6/12 下午7:13:24"
+      },
+      "author": ""
+    },
+    "7619efe63876b704": {
+      "id": "7619efe63876b704",
+      "title": "计划",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:13:52",
+        "modified": "2025/6/12 下午7:13:52"
+      },
+      "author": ""
+    },
+    "7619e75091213ca3": {
+      "id": "7619e75091213ca3",
+      "title": "里程碑",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:13:53",
+        "modified": "2025/6/12 下午7:13:53"
+      },
+      "author": ""
+    },
+    "763da7355e705b26": {
+      "id": "763da7355e705b26",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": [
+          "7619e83a0f2e54e7",
+          "7619e75091213ca3",
+          "7619e5105d9c0f1b",
+          "7619ee9075557e56",
+          "7619efe63876b704"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:16:03",
+        "modified": "2025/6/12 下午7:16:03"
+      },
+      "author": ""
+    },
+    "763dabf3d5504747": {
+      "id": "763dabf3d5504747",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "7619e4092d7f0576",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:16:20",
+        "modified": "2025/6/12 下午7:16:20"
+      },
+      "author": ""
+    },
+    "75a55ce66441e1d6": {
+      "id": "75a55ce66441e1d6",
+      "title": "ast工具分析无用代码，codelens显示调用关系",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:16:42",
+        "modified": "2025/6/12 下午7:16:42"
+      },
+      "author": ""
+    },
+    "7608e10098e37a7f": {
+      "id": "7608e10098e37a7f",
+      "title": "标签管理：临时工作区B",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": [],
+        "custom": []
+      },
+      "time": {
+        "created": "2025/6/12 下午7:16:43",
+        "modified": "2025/6/12 下午7:16:43"
+      },
+      "author": ""
+    }
+  },
+  "exportInfo": {
+    "timestamp": "2025-06-12T11:47:23.069Z",
+    "version": "1.0.0",
+    "exported_by": "NodeMind",
+    "export_type": "custom_with_path_selection"
+  }
+}

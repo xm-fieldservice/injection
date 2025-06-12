@@ -1,0 +1,767 @@
+{
+  "mindmap": {
+    "meta": {
+      "name": "新内容脑图",
+      "author": "NodeMind",
+      "version": "1.0.0"
+    },
+    "format": "node_tree",
+    "data": {
+      "id": "new_root_1749519634001",
+      "topic": "🧠 中心节点",
+      "expanded": true,
+      "children": [
+        {
+          "id": "virtual_center_1749526667300_r18kfa0zl",
+          "topic": "📌 PROJECT 中心",
+          "expanded": true,
+          "direction": "right",
+          "children": [
+            {
+              "id": "757ec59b0fb95687",
+              "topic": "形式节点",
+              "expanded": true,
+              "children": [
+                {
+                  "id": "757ea1c9366416c1",
+                  "topic": "中心节点强制性隐藏，否则会把新增节点加到上面",
+                  "expanded": true
+                },
+                {
+                  "id": "757eb721a54aff08",
+                  "topic": "详情页新增其他属性：节点内容",
+                  "expanded": true,
+                  "children": [
+                    {
+                      "id": "757ebaccdec873ef",
+                      "topic": "节点内容的持久化处理",
+                      "expanded": true
+                    },
+                    {
+                      "id": "7597db278ff53ac7",
+                      "topic": "点击节点，默认打开详情页",
+                      "expanded": true
+                    },
+                    {
+                      "id": "7597e00c2b7ecda5",
+                      "topic": "将数据分析名字改为详情页，并且放在第一个。",
+                      "expanded": true
+                    },
+                    {
+                      "id": "7597e37649e599ba",
+                      "topic": "将详情页改成备用",
+                      "expanded": true
+                    }
+                  ]
+                },
+                {
+                  "id": "757ebd21d1e0e134",
+                  "topic": "文件的保存；保存的时候要保存：形式节点，不保存中心节点",
+                  "expanded": true
+                },
+                {
+                  "id": "757ed857bcd7271d",
+                  "topic": "自定保存只有文件名，没有路几个；而且也没找到“形式节点”的路径",
+                  "expanded": true
+                },
+                {
+                  "id": "7597a7b3f6476366",
+                  "topic": "快捷键调节工具窗口大小",
+                  "expanded": true
+                },
+                {
+                  "id": "7597f7eea7c278da",
+                  "topic": "笔记：脑图和注入命令相结合，可以在生成的同时，记笔记，用时运行其他任务；",
+                  "expanded": true
+                }
+              ]
+            },
+            {
+              "id": "7597edb8436f1603",
+              "topic": "两个工具实例同时工作（当前不行）",
+              "expanded": true
+            },
+            {
+              "id": "759804a3234e0d6f",
+              "topic": "详情页与注入命令（智能体调用）同步；",
+              "expanded": true
+            },
+            {
+              "id": "759825ab4fa52976",
+              "topic": "当前的这个工具早晚要重构呀",
+              "expanded": true
+            },
+            {
+              "id": "75a5358638dc6b8f",
+              "topic": "热重载机制不能对于新增的模块或者某些“系统死角”无法发挥作用。",
+              "expanded": true
+            },
+            {
+              "id": "75a55ce66441e1d6",
+              "topic": "ast工具分析无用代码，codelens显示调用关系",
+              "expanded": true
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "nodeDetails": {
+    "new_root_1749519634001": {
+      "id": "new_root_1749519634001",
+      "title": "🧠 中心节点",
+      "content": "",
+      "relations": {
+        "parent": null,
+        "children": [
+          "virtual_center_1749526667300_r18kfa0zl"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "7578b252383150b7": {
+      "id": "7578b252383150b7",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "new_root_1749519634001",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/10 上午9:53:48",
+        "modified": "2025/6/10 上午9:53:48"
+      },
+      "author": ""
+    },
+    "7578b42b6d137baa": {
+      "id": "7578b42b6d137baa",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "7578b252383150b7",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/10 上午9:53:56",
+        "modified": "2025/6/10 上午9:53:56"
+      },
+      "author": ""
+    },
+    "virtual_center_1749525824037_u84wulbb2": {
+      "id": "virtual_center_1749525824037_u84wulbb2",
+      "title": "📌 WORKSPACE 中心",
+      "content": "这是形式上的中心节点，用于业务逻辑管理。真实的系统根节点已被隐藏。",
+      "relations": {
+        "parent": "7570898ce2f28be4",
+        "children": []
+      },
+      "tags": {
+        "categories": [
+          "系统",
+          "中心节点"
+        ],
+        "technical": [
+          "虚拟节点",
+          "形式中心"
+        ],
+        "status": [
+          "活跃"
+        ]
+      },
+      "time": {
+        "created": "2025/6/10 上午11:23:44",
+        "updated": "2025/6/10 上午11:23:44"
+      },
+      "details": {
+        "description": "形式中心节点：用户视角的业务中心，隐藏了技术层面的真实根节点",
+        "implementation": "通过jsMind API创建的普通节点，具有特殊的持久化标记",
+        "testing": "支持所有普通节点操作：编辑、移动、添加子节点等",
+        "notes": "这个节点可以被当作真正的中心节点使用，满足业务需求"
+      },
+      "isVirtualCenter": true,
+      "virtualCenterConfig": {
+        "tabName": "workspace",
+        "rootId": "7570898ce2f28be4",
+        "autoCreated": true
+      }
+    },
+    "virtual_center_1749525824045_sq1e13tly": {
+      "id": "virtual_center_1749525824045_sq1e13tly",
+      "title": "📌 KNOWLEDGE 中心",
+      "content": "这是形式上的中心节点，用于业务逻辑管理。真实的系统根节点已被隐藏。",
+      "relations": {
+        "parent": "7570898ce2f28be4",
+        "children": []
+      },
+      "tags": {
+        "categories": [
+          "系统",
+          "中心节点"
+        ],
+        "technical": [
+          "虚拟节点",
+          "形式中心"
+        ],
+        "status": [
+          "活跃"
+        ]
+      },
+      "time": {
+        "created": "2025/6/10 上午11:23:44",
+        "updated": "2025/6/10 上午11:23:44"
+      },
+      "details": {
+        "description": "形式中心节点：用户视角的业务中心，隐藏了技术层面的真实根节点",
+        "implementation": "通过jsMind API创建的普通节点，具有特殊的持久化标记",
+        "testing": "支持所有普通节点操作：编辑、移动、添加子节点等",
+        "notes": "这个节点可以被当作真正的中心节点使用，满足业务需求"
+      },
+      "isVirtualCenter": true,
+      "virtualCenterConfig": {
+        "tabName": "knowledge",
+        "rootId": "7570898ce2f28be4",
+        "autoCreated": true
+      }
+    },
+    "virtual_center_1749525824046_mo3g993gh": {
+      "id": "virtual_center_1749525824046_mo3g993gh",
+      "title": "📌 PROJECT 中心",
+      "content": "这是形式上的中心节点，用于业务逻辑管理。真实的系统根节点已被隐藏。",
+      "relations": {
+        "parent": "new_root_1749519634001",
+        "children": []
+      },
+      "tags": {
+        "categories": [
+          "系统",
+          "中心节点"
+        ],
+        "technical": [
+          "虚拟节点",
+          "形式中心"
+        ],
+        "status": [
+          "活跃"
+        ]
+      },
+      "time": {
+        "created": "2025/6/10 上午11:23:44",
+        "updated": "2025/6/10 上午11:23:44"
+      },
+      "details": {
+        "description": "形式中心节点：用户视角的业务中心，隐藏了技术层面的真实根节点",
+        "implementation": "通过jsMind API创建的普通节点，具有特殊的持久化标记",
+        "testing": "支持所有普通节点操作：编辑、移动、添加子节点等",
+        "notes": "这个节点可以被当作真正的中心节点使用，满足业务需求"
+      },
+      "isVirtualCenter": true,
+      "virtualCenterConfig": {
+        "tabName": "project",
+        "rootId": "new_root_1749519634001",
+        "autoCreated": true
+      }
+    },
+    "virtual_center_1749526667300_r18kfa0zl": {
+      "id": "virtual_center_1749526667300_r18kfa0zl",
+      "title": "📌 PROJECT 中心",
+      "content": "",
+      "relations": {
+        "parent": "new_root_1749519634001",
+        "children": [
+          "757ec59b0fb95687",
+          "7597edb8436f1603",
+          "759804a3234e0d6f",
+          "759825ab4fa52976",
+          "75a5358638dc6b8f",
+          "75a55ce66441e1d6"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757ea1c9366416c1": {
+      "id": "757ea1c9366416c1",
+      "title": "中心节点强制性隐藏，否则会把新增节点加到上面",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757ec3fa6dd4b765": {
+      "id": "757ec3fa6dd4b765",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "new_root_1749519634001",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/10 上午11:39:52",
+        "modified": "2025/6/10 上午11:39:52"
+      },
+      "author": ""
+    },
+    "757ebd21d1e0e134": {
+      "id": "757ebd21d1e0e134",
+      "title": "文件的保存；保存的时候要保存：形式节点，不保存中心节点",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757ebaccdec873ef": {
+      "id": "757ebaccdec873ef",
+      "title": "节点内容的持久化处理",
+      "content": "",
+      "relations": {
+        "parent": "757eb721a54aff08",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757eb721a54aff08": {
+      "id": "757eb721a54aff08",
+      "title": "详情页新增其他属性：节点内容",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": [
+          "757ebaccdec873ef",
+          "7597db278ff53ac7",
+          "7597e00c2b7ecda5",
+          "7597e37649e599ba"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757ed857bcd7271d": {
+      "id": "757ed857bcd7271d",
+      "title": "自定保存只有文件名，没有路几个；而且也没找到“形式节点”的路径",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757ec59b0fb95687": {
+      "id": "757ec59b0fb95687",
+      "title": "形式节点",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": [
+          "757ea1c9366416c1",
+          "757eb721a54aff08",
+          "757ebd21d1e0e134",
+          "757ed857bcd7271d",
+          "7597a7b3f6476366",
+          "7597f7eea7c278da"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "757f2fdf0b3aae50": {
+      "id": "757f2fdf0b3aae50",
+      "title": "New Node",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/10 上午11:47:16",
+        "modified": "2025/6/10 上午11:47:16"
+      },
+      "author": ""
+    },
+    "7597a7b3f6476366": {
+      "id": "7597a7b3f6476366",
+      "title": "快捷键调节工具窗口大小",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "7597e00c2b7ecda5": {
+      "id": "7597e00c2b7ecda5",
+      "title": "将数据分析名字改为详情页，并且放在第一个。",
+      "content": "",
+      "relations": {
+        "parent": "757eb721a54aff08",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "7597edb8436f1603": {
+      "id": "7597edb8436f1603",
+      "title": "两个工具实例同时工作（当前不行）",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "759804a3234e0d6f": {
+      "id": "759804a3234e0d6f",
+      "title": "详情页与注入命令（智能体调用）同步；",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "759825ab4fa52976": {
+      "id": "759825ab4fa52976",
+      "title": "当前的这个工具早晚要重构呀",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "75a5358638dc6b8f": {
+      "id": "75a5358638dc6b8f",
+      "title": "热重载机制不能对于新增的模块或者某些“系统死角”无法发挥作用。",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "75a55ce66441e1d6": {
+      "id": "75a55ce66441e1d6",
+      "title": "ast工具分析无用代码，codelens显示调用关系",
+      "content": "",
+      "relations": {
+        "parent": "virtual_center_1749526667300_r18kfa0zl",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "74599b64e94b9434": {
+      "id": "74599b64e94b9434",
+      "title": "多个页面的节点的跨页面拖拽拷贝",
+      "content": "",
+      "relations": {
+        "parent": null,
+        "children": [
+          "virtual_center_1749525714730_j6dufrvhg"
+        ]
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 00:48:02",
+        "modified": "2025/6/11 00:48:02"
+      },
+      "author": ""
+    },
+    "virtual_center_1749525714724_cisaroz2l": {
+      "id": "virtual_center_1749525714724_cisaroz2l",
+      "title": "📌 WORKSPACE 中心",
+      "content": "",
+      "relations": {
+        "parent": "74599b64e94b9434",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 00:48:02",
+        "modified": "2025/6/11 00:48:02"
+      },
+      "author": ""
+    },
+    "virtual_center_1749525714730_j6dufrvhg": {
+      "id": "virtual_center_1749525714730_j6dufrvhg",
+      "title": "📌 KNOWLEDGE 中心",
+      "content": "",
+      "relations": {
+        "parent": "74599b64e94b9434",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 00:48:02",
+        "modified": "2025/6/11 00:48:02"
+      },
+      "author": ""
+    },
+    "7597db278ff53ac7": {
+      "id": "7597db278ff53ac7",
+      "title": "点击节点，默认打开详情页",
+      "content": "",
+      "relations": {
+        "parent": "757eb721a54aff08",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "7597e37649e599ba": {
+      "id": "7597e37649e599ba",
+      "title": "将详情页改成备用",
+      "content": "",
+      "relations": {
+        "parent": "757eb721a54aff08",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "7597f7eea7c278da": {
+      "id": "7597f7eea7c278da",
+      "title": "笔记：脑图和注入命令相结合，可以在生成的同时，记笔记，用时运行其他任务；",
+      "content": "",
+      "relations": {
+        "parent": "757ec59b0fb95687",
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "workspace_root": {
+      "id": "workspace_root",
+      "title": "🔬 临时工作区A",
+      "content": "",
+      "relations": {
+        "parent": null,
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    },
+    "knowledge_root": {
+      "id": "knowledge_root",
+      "title": "📋 临时工作区B",
+      "content": "",
+      "relations": {
+        "parent": null,
+        "children": []
+      },
+      "tags": {
+        "categories": [],
+        "technical": [],
+        "status": []
+      },
+      "time": {
+        "created": "2025/6/11 上午11:34:47",
+        "modified": "2025/6/11 上午11:34:47"
+      },
+      "author": ""
+    }
+  },
+  "exportInfo": {
+    "timestamp": "2025-06-11T03:34:48.483Z",
+    "version": "1.0.0",
+    "exported_by": "NodeMind",
+    "export_type": "custom_with_path_selection"
+  }
+}

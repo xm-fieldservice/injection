@@ -1,0 +1,62 @@
+# Injection V2 - 项目依赖文件
+
+# ==== 核心Web框架 ====
+Flask==2.3.3
+Flask-CORS==4.0.0
+Flask-JWT-Extended==4.5.3
+Flask-SQLAlchemy==3.0.5
+Flask-Migrate==4.0.5
+
+# ==== 数据库 ====
+psycopg2-binary==2.9.7  # PostgreSQL驱动
+redis==4.6.0             # Redis客户端
+SQLAlchemy==2.0.20       # ORM
+
+# ==== Web服务器 ====
+gunicorn==21.2.0         # WSGI服务器
+Werkzeug==2.3.7          # WSGI工具包
+
+# ==== API和序列化 ====
+marshmallow==3.20.1      # 序列化/反序列化
+Flask-Marshmallow==0.15.0
+requests==2.31.0         # HTTP客户端
+
+# ==== 桌面客户端 ====
+PyQt5==5.15.9            # GUI框架
+PyQt5-Qt5==5.15.10
+PyQt5-sip==12.12.2
+
+# ==== 安全和认证 ====
+bcrypt==4.0.1            # 密码哈希
+PyJWT==2.8.0             # JWT令牌
+
+# ==== 配置管理 ====
+python-dotenv==1.0.0     # 环境变量管理
+PyYAML==6.0.1            # YAML配置
+
+# ==== 日志和监控 ====
+structlog==23.1.0        # 结构化日志
+click==8.1.7             # 命令行工具
+
+# ==== 开发工具 ====
+pytest==7.4.2           # 测试框架
+pytest-cov==4.1.0       # 测试覆盖率
+black==23.9.1            # 代码格式化
+flake8==6.1.0            # 代码检查
+
+# ==== 系统工具 ====
+psutil==5.9.5            # 系统信息
+watchdog==3.0.0          # 文件监控
+
+# ==== Windows特定(可选) ====
+pywin32==306 ; sys_platform == "win32"     # Windows API
+wmi==1.5.1 ; sys_platform == "win32"       # Windows管理
+
+# ==== 时间处理 ====
+pytz==2023.3             # 时区处理
+
+# ==== JSON和数据处理 ====
+jsonschema==4.19.1       # JSON验证
+
+# ==== 网络工具 ====
+urllib3==2.0.5           # HTTP库 

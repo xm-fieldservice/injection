@@ -1,0 +1,487 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简易思维导图</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            height: calc(100vh - 20px);
+            display: flex;
+            flex-direction: column;
+        }
+        
+        .toolbar {
+            background: #f8f9fa;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 10px;
+        }
+        
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        .btn-success { background: #28a745; }
+        .btn-success:hover { background: #1e7e34; }
+        
+        .btn-danger { background: #dc3545; }
+        .btn-danger:hover { background: #c82333; }
+        
+        .mindmap-area {
+            flex: 1;
+            position: relative;
+            overflow: auto;
+            background: #ffffff;
+        }
+        
+        .mindmap-canvas {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            min-height: 600px;
+        }
+        
+        .node {
+            position: absolute;
+            background: #fff;
+            border: 2px solid #007bff;
+            border-radius: 8px;
+            padding: 10px 15px;
+            cursor: pointer;
+            user-select: none;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            transition: all 0.2s ease;
+            font-size: 14px;
+            min-width: 80px;
+            text-align: center;
+        }
+        
+        .node:hover {
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+            transform: translateY(-2px);
+        }
+        
+        .node.selected {
+            border-color: #dc3545;
+            background: #fff5f5;
+        }
+        
+        .node.root {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-color: #5a6cf3;
+            font-weight: bold;
+            font-size: 16px;
+        }
+        
+        .node.level-1 {
+            background: #e3f2fd;
+            border-color: #2196f3;
+        }
+        
+        .node.level-2 {
+            background: #f3e5f5;
+            border-color: #9c27b0;
+        }
+        
+        .connection {
+            position: absolute;
+            border-top: 2px solid #666;
+            z-index: 1;
+        }
+        
+        .status-bar {
+            background: #f8f9fa;
+            padding: 8px 15px;
+            border-top: 1px solid #dee2e6;
+            font-size: 12px;
+            color: #6c757d;
+        }
+        
+        .edit-input {
+            position: absolute;
+            border: 2px solid #007bff;
+            border-radius: 4px;
+            padding: 8px;
+            font-size: 14px;
+            z-index: 100;
+            background: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button class="btn" onclick="addChildNode()">➕ 添加子节点</button>
+            <button class="btn btn-success" onclick="addSiblingNode()">↔️ 添加兄弟节点</button>
+            <button class="btn" onclick="editNode()">✏️ 编辑节点</button>
+            <!-- 删除和重置按键已移除 - 按照用户要求简化界面 -->
+        </div>
+        
+        <div class="mindmap-area">
+            <div class="mindmap-canvas" id="mindmap-canvas"></div>
+        </div>
+        
+        <div class="status-bar">
+            <span>选中节点: </span><span id="selectedNode">中心主题</span>
+            <span style="margin-left: 20px;">节点总数: </span><span id="nodeCount">5</span>
+        </div>
+    </div>
+
+    <script>
+        // 思维导图数据结构
+        let mindmapData = {
+            id: 'root',
+            text: '🧠 中心主题',
+            x: 400,
+            y: 250,
+            level: 0,
+            children: [
+                {
+                    id: 'idea1',
+                    text: '💡 想法分支',
+                    x: 200,
+                    y: 150,
+                    level: 1,
+                    children: [
+                        { id: 'idea1-1', text: '具体想法1', x: 80, y: 100, level: 2, children: [] },
+                        { id: 'idea1-2', text: '具体想法2', x: 80, y: 200, level: 2, children: [] }
+                    ]
+                },
+                {
+                    id: 'plan1',
+                    text: '📋 计划分支',
+                    x: 600,
+                    y: 150,
+                    level: 1,
+                    children: [
+                        { id: 'plan1-1', text: '步骤1', x: 720, y: 100, level: 2, children: [] },
+                        { id: 'plan1-2', text: '步骤2', x: 720, y: 200, level: 2, children: [] }
+                    ]
+                }
+            ]
+        };
+
+        let selectedNode = null;
+        let nodeIdCounter = 100;
+
+        // 初始化思维导图
+        function initMindmap() {
+            renderMindmap();
+            selectNode('root');
+            updateStatus();
+        }
+
+        // 渲染思维导图
+        function renderMindmap() {
+            const canvas = document.getElementById('mindmap-canvas');
+            canvas.innerHTML = '';
+            
+            // 渲染连接线
+            renderConnections(mindmapData, canvas);
+            
+            // 渲染节点
+            renderNodes(mindmapData, canvas);
+        }
+
+        // 渲染节点
+        function renderNodes(node, canvas) {
+            // 创建节点元素
+            const nodeElement = document.createElement('div');
+            nodeElement.className = `node level-${node.level}`;
+            if (node.level === 0) nodeElement.classList.add('root');
+            nodeElement.id = `node-${node.id}`;
+            nodeElement.style.left = node.x + 'px';
+            nodeElement.style.top = node.y + 'px';
+            nodeElement.textContent = node.text;
+            
+            // 添加点击事件
+            nodeElement.onclick = () => selectNode(node.id);
+            nodeElement.ondblclick = () => editNodeText(node.id);
+            
+            canvas.appendChild(nodeElement);
+            
+            // 递归渲染子节点
+            if (node.children) {
+                node.children.forEach(child => renderNodes(child, canvas));
+            }
+        }
+
+        // 渲染连接线
+        function renderConnections(node, canvas) {
+            if (node.children) {
+                node.children.forEach(child => {
+                    const line = document.createElement('div');
+                    line.className = 'connection';
+                    
+                    const x1 = node.x + 50; // 节点中心
+                    const y1 = node.y + 20;
+                    const x2 = child.x + 50;
+                    const y2 = child.y + 20;
+                    
+                    const length = Math.sqrt((x2-x1)**2 + (y2-y1)**2);
+                    const angle = Math.atan2(y2-y1, x2-x1) * 180 / Math.PI;
+                    
+                    line.style.left = x1 + 'px';
+                    line.style.top = y1 + 'px';
+                    line.style.width = length + 'px';
+                    line.style.transformOrigin = '0 0';
+                    line.style.transform = `rotate(${angle}deg)`;
+                    
+                    canvas.appendChild(line);
+                    
+                    // 递归渲染子连接
+                    renderConnections(child, canvas);
+                });
+            }
+        }
+
+        // 选择节点
+        function selectNode(nodeId) {
+            // 移除之前的选择
+            document.querySelectorAll('.node').forEach(n => n.classList.remove('selected'));
+            
+            // 选择新节点
+            const nodeElement = document.getElementById(`node-${nodeId}`);
+            if (nodeElement) {
+                nodeElement.classList.add('selected');
+                selectedNode = findNodeById(mindmapData, nodeId);
+                updateStatus();
+            }
+        }
+
+        // 查找节点
+        function findNodeById(node, id) {
+            if (node.id === id) return node;
+            if (node.children) {
+                for (let child of node.children) {
+                    const found = findNodeById(child, id);
+                    if (found) return found;
+                }
+            }
+            return null;
+        }
+
+        // 添加子节点
+        function addChildNode() {
+            if (!selectedNode) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            const text = prompt('请输入子节点内容:', '新子节点');
+            if (!text) return;
+            
+            const newNode = {
+                id: 'node_' + (++nodeIdCounter),
+                text: text,
+                x: selectedNode.x + (selectedNode.level === 0 ? 200 : 100),
+                y: selectedNode.y + selectedNode.children.length * 80,
+                level: selectedNode.level + 1,
+                children: []
+            };
+            
+            if (!selectedNode.children) selectedNode.children = [];
+            selectedNode.children.push(newNode);
+            
+            renderMindmap();
+            selectNode(newNode.id);
+            updateStatus();
+        }
+
+        // 添加兄弟节点
+        function addSiblingNode() {
+            if (!selectedNode || selectedNode.level === 0) {
+                alert('根节点不能添加兄弟节点');
+                return;
+            }
+            
+            const text = prompt('请输入兄弟节点内容:', '新兄弟节点');
+            if (!text) return;
+            
+            const parent = findParentNode(mindmapData, selectedNode.id);
+            if (!parent) return;
+            
+            const newNode = {
+                id: 'node_' + (++nodeIdCounter),
+                text: text,
+                x: selectedNode.x,
+                y: selectedNode.y + 80,
+                level: selectedNode.level,
+                children: []
+            };
+            
+            parent.children.push(newNode);
+            repositionNodes();
+            renderMindmap();
+            selectNode(newNode.id);
+            updateStatus();
+        }
+
+        // 查找父节点
+        function findParentNode(node, childId) {
+            if (node.children) {
+                for (let child of node.children) {
+                    if (child.id === childId) return node;
+                    const found = findParentNode(child, childId);
+                    if (found) return found;
+                }
+            }
+            return null;
+        }
+
+        // 编辑节点
+        function editNode() {
+            if (!selectedNode) {
+                alert('请先选择一个节点');
+                return;
+            }
+            editNodeText(selectedNode.id);
+        }
+
+        // 编辑节点文本
+        function editNodeText(nodeId) {
+            const node = findNodeById(mindmapData, nodeId);
+            if (!node) return;
+            
+            const newText = prompt('请输入新的节点内容:', node.text);
+            if (newText && newText.trim()) {
+                node.text = newText.trim();
+                renderMindmap();
+                selectNode(nodeId);
+                updateStatus();
+            }
+        }
+
+        // 删除节点
+        function deleteNode() {
+            if (!selectedNode) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            if (selectedNode.level === 0) {
+                alert('不能删除根节点');
+                return;
+            }
+            
+            if (!confirm('确定要删除这个节点吗？')) return;
+            
+            const parent = findParentNode(mindmapData, selectedNode.id);
+            if (parent) {
+                parent.children = parent.children.filter(child => child.id !== selectedNode.id);
+                repositionNodes();
+                renderMindmap();
+                selectNode('root');
+                updateStatus();
+            }
+        }
+
+        // 重新定位节点
+        function repositionNodes() {
+            function repositionNode(node, baseX, baseY) {
+                node.x = baseX;
+                node.y = baseY;
+                
+                if (node.children && node.children.length > 0) {
+                    const childSpacing = 80;
+                    const totalHeight = (node.children.length - 1) * childSpacing;
+                    const startY = baseY - totalHeight / 2;
+                    
+                    node.children.forEach((child, index) => {
+                        const childX = baseX + (node.level === 0 ? 200 : 150);
+                        const childY = startY + index * childSpacing;
+                        repositionNode(child, childX, childY);
+                    });
+                }
+            }
+            
+            repositionNode(mindmapData, 400, 250);
+        }
+
+        // 重置思维导图
+        function resetMindmap() {
+            if (!confirm('确定要重置思维导图吗？')) return;
+            
+            mindmapData = {
+                id: 'root',
+                text: '🧠 中心主题',
+                x: 400,
+                y: 250,
+                level: 0,
+                children: [
+                    {
+                        id: 'idea1',
+                        text: '💡 想法分支',
+                        x: 200,
+                        y: 150,
+                        level: 1,
+                        children: [
+                            { id: 'idea1-1', text: '具体想法1', x: 80, y: 100, level: 2, children: [] },
+                            { id: 'idea1-2', text: '具体想法2', x: 80, y: 200, level: 2, children: [] }
+                        ]
+                    },
+                    {
+                        id: 'plan1',
+                        text: '📋 计划分支',
+                        x: 600,
+                        y: 150,
+                        level: 1,
+                        children: [
+                            { id: 'plan1-1', text: '步骤1', x: 720, y: 100, level: 2, children: [] },
+                            { id: 'plan1-2', text: '步骤2', x: 720, y: 200, level: 2, children: [] }
+                        ]
+                    }
+                ]
+            };
+            
+            renderMindmap();
+            selectNode('root');
+            updateStatus();
+        }
+
+        // 更新状态显示
+        function updateStatus() {
+            document.getElementById('selectedNode').textContent = selectedNode ? selectedNode.text : '无';
+            document.getElementById('nodeCount').textContent = countNodes(mindmapData);
+        }
+
+        // 计算节点数量
+        function countNodes(node) {
+            let count = 1;
+            if (node.children) {
+                count += node.children.reduce((sum, child) => sum + countNodes(child), 0);
+            }
+            return count;
+        }
+
+        // 页面加载完成后初始化
+        document.addEventListener('DOMContentLoaded', function() {
+            initMindmap();
+            console.log('简易思维导图已初始化');
+        });
+    </script>
+</body>
+</html> 

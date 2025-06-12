@@ -1,0 +1,28 @@
+{
+  "main_splitter_sizes": [
+    311,
+    1211
+  ],
+  "current_command_tab": 0,
+  "config": {
+    "left_panel_width": 311,
+    "min_widths": {
+      "left_panel": 153,
+      "command_area": 384
+    },
+    "min_heights": {
+      "command_area": 250
+    },
+    "ratios": {
+      "left_panel_ratio": 0.15,
+      "md_reader_ratio": 0.27,
+      "list_area_ratio": 0.19
+    }
+  },
+  "window_size": {
+    "width": 1536,
+    "height": 912
+  },
+  "timestamp": "2025-06-12T22:44:05.345369",
+  "version": "2.0"
+}

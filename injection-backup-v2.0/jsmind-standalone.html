@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jsMind 思维导图</title>
+    <!-- 使用CDN引入jsMind -->
+    <link type="text/css" rel="stylesheet" href="https://unpkg.com/jsmind@0.7.0/style/jsmind.css" />
+    <script type="text/javascript" src="https://unpkg.com/jsmind@0.7.0/es6/jsmind.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/jsmind@0.7.0/es6/jsmind.draggable-node.js"></script>
+    
+    <style>
+        body {
+            margin: 0;
+            padding: 10px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Arial, sans-serif;
+            background: #f8f9fa;
+        }
+        
+        .container {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+            height: calc(100vh - 20px);
+        }
+        
+        .toolbar {
+            background: #f8f9fa;
+            padding: 10px;
+            border-bottom: 1px solid #dee2e6;
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+        
+        .btn {
+            background: #007bff;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background-color 0.2s;
+        }
+        
+        .btn:hover {
+            background: #0056b3;
+        }
+        
+        .btn-success { background: #28a745; }
+        .btn-success:hover { background: #1e7e34; }
+        
+        .btn-danger { background: #dc3545; }
+        .btn-danger:hover { background: #c82333; }
+        
+        #jsmind_container {
+            height: calc(100vh - 80px);
+            background: #ffffff;
+        }
+        
+        .status-bar {
+            background: #f8f9fa;
+            padding: 5px 15px;
+            border-top: 1px solid #dee2e6;
+            font-size: 12px;
+            color: #6c757d;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="toolbar">
+            <button class="btn" onclick="addNode()">➕ 添加节点</button>
+            <button class="btn btn-success" onclick="addChildNode()">👶 添加子节点</button>
+            <button class="btn btn-danger" onclick="removeNode()">🗑️ 删除节点</button>
+            <button class="btn" onclick="editNode()">✏️ 编辑节点</button>
+            <button class="btn" onclick="resetMindmap()">🔄 重置</button>
+        </div>
+        
+        <div id="jsmind_container"></div>
+        
+        <div class="status-bar">
+            <span>选中节点: </span><span id="selectedNode">无</span>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+        // 思维导图初始数据
+        var mindData = {
+            meta: {
+                name: "jsMind 演示",
+                author: "Injection Tool",
+                version: "1.0.0"
+            },
+            format: "node_tree",
+            data: {
+                id: "root",
+                topic: "🧠 中心主题",
+                children: [
+                    {
+                        id: "features",
+                        topic: "🚀 功能特性",
+                        direction: "right",
+                        children: [
+                            { id: "feature1", topic: "节点编辑" },
+                            { id: "feature2", topic: "拖拽操作" },
+                            { id: "feature3", topic: "导入导出" }
+                        ]
+                    },
+                    {
+                        id: "usage",
+                        topic: "📖 使用方法",
+                        direction: "left",
+                        children: [
+                            { id: "usage1", topic: "创建节点" },
+                            { id: "usage2", topic: "编辑内容" },
+                            { id: "usage3", topic: "保存数据" }
+                        ]
+                    }
+                ]
+            }
+        };
+
+        // 配置选项
+        var options = {
+            container: 'jsmind_container',
+            editable: true,
+            theme: 'primary',
+            view: {
+                engine: 'canvas',
+                hmargin: 100,
+                vmargin: 50,
+                line_width: 2,
+                line_color: '#566'
+            },
+            layout: {
+                hspace: 30,
+                vspace: 20,
+                pspace: 13
+            },
+            shortcut: {
+                enable: true,
+                handles: {},
+                mapping: {
+                    addchild: 4096 + 13,  // Ctrl+Enter
+                    addbrother: 13,       // Enter
+                    editnode: 113,        // F2
+                    delnode: 46,          // Delete
+                    toggle: 32            // Space
+                }
+            }
+        };
+
+        // 初始化jsMind
+        var jm = new jsMind(options);
+        
+        // 显示思维导图
+        jm.show(mindData);
+        
+        // 监听节点选择事件
+        jm.add_event_listener(function(type, data) {
+            if (type === jsMind.event_type.select) {
+                var selectedNode = data.node;
+                if (selectedNode) {
+                    document.getElementById('selectedNode').textContent = selectedNode.topic;
+                } else {
+                    document.getElementById('selectedNode').textContent = '无';
+                }
+            }
+        });
+
+        // 添加兄弟节点
+        function addNode() {
+            var selected_node = jm.get_selected_node();
+            if (!selected_node) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            var nodeid = jsMind.util.uuid.newid();
+            var topic = prompt('请输入节点内容:', '新节点');
+            if (topic) {
+                jm.add_node(selected_node.parent, nodeid, topic, selected_node.direction);
+            }
+        }
+
+        // 添加子节点
+        function addChildNode() {
+            var selected_node = jm.get_selected_node();
+            if (!selected_node) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            var nodeid = jsMind.util.uuid.newid();
+            var topic = prompt('请输入子节点内容:', '子节点');
+            if (topic) {
+                jm.add_node(selected_node, nodeid, topic);
+            }
+        }
+
+        // 删除节点
+        function removeNode() {
+            var selected_node = jm.get_selected_node();
+            if (!selected_node) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            if (selected_node.isroot) {
+                alert('不能删除根节点');
+                return;
+            }
+            
+            if (confirm('确定要删除选中的节点吗？')) {
+                jm.remove_node(selected_node);
+            }
+        }
+
+        // 编辑节点
+        function editNode() {
+            var selected_node = jm.get_selected_node();
+            if (!selected_node) {
+                alert('请先选择一个节点');
+                return;
+            }
+            
+            var topic = prompt('请输入新的节点内容:', selected_node.topic);
+            if (topic) {
+                jm.update_node(selected_node.id, topic);
+            }
+        }
+
+        // 重置思维导图
+        function resetMindmap() {
+            if (confirm('确定要重置思维导图吗？')) {
+                jm.show(mindData);
+                document.getElementById('selectedNode').textContent = '无';
+            }
+        }
+
+        console.log('jsMind 思维导图已初始化');
+    </script>
+</body>
+</html> 

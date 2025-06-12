@@ -1,0 +1,75 @@
+{
+  "meta": {
+    "name": "Injection Mind Map",
+    "author": "Injection Tool",
+    "version": "1.0",
+    "export_time": "2025-06-09T00:32:43.003742"
+  },
+  "format": "node_tree",
+  "data": {
+    "id": "center",
+    "topic": "🧠 中心节点",
+    "children": [
+      {
+        "id": "projects",
+        "topic": "📁 项目管理",
+        "direction": "left",
+        "children": [
+          {
+            "id": "current_project",
+            "topic": "📌 当前项目: injection"
+          }
+        ]
+      },
+      {
+        "id": "workflow",
+        "topic": "🔄 工作流程",
+        "direction": "right",
+        "children": [
+          {
+            "id": "input_stage",
+            "topic": "📥 输入阶段"
+          },
+          {
+            "id": "process_stage",
+            "topic": "⚙️ 处理阶段"
+          },
+          {
+            "id": "output_stage",
+            "topic": "📤 输出阶段"
+          }
+        ]
+      },
+      {
+        "id": "tools",
+        "topic": "🛠️ 工具集合",
+        "direction": "left",
+        "children": [
+          {
+            "id": "injection_tool",
+            "topic": "💉 注入工具"
+          },
+          {
+            "id": "mindmap_tool",
+            "topic": "🧠 脑图工具"
+          }
+        ]
+      },
+      {
+        "id": "knowledge",
+        "topic": "📚 知识体系",
+        "direction": "right",
+        "children": [
+          {
+            "id": "experience",
+            "topic": "💡 经验积累"
+          },
+          {
+            "id": "best_practices",
+            "topic": "⭐ 最佳实践"
+          }
+        ]
+      }
+    ]
+  }
+}

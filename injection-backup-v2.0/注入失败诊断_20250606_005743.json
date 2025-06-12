@@ -1,0 +1,773 @@
+{
+  "report_time": "2025-06-06T00:57:43.767820",
+  "system_info": {
+    "os": "Windows 10.0.26100",
+    "python_version": "3.10.11",
+    "cpu_count": 16,
+    "memory_total": 16893206528,
+    "memory_available": 1590820864,
+    "disk_usage": 162636845056,
+    "timestamp": "2025-06-05T23:53:15.742464"
+  },
+  "current_state": {
+    "timestamp": "2025-06-06T00:57:43.767820",
+    "target_window_configured": true,
+    "target_window_title": "Cursor",
+    "target_position": [
+      1699,
+      1010
+    ],
+    "log_file": "D:/AI-Projects/my-log.md",
+    "default_scene": "详细版提示词",
+    "default_version": "默认模板",
+    "current_selected_scene": "★ 详细版提示词",
+    "current_selected_version": "默认模板",
+    "realtime_enabled": false,
+    "command_input_length": 0,
+    "scenes_count": 5,
+    "template_manager_status": 5
+  },
+  "injection_failure_diagnosis": {
+    "failed_attempts": [],
+    "successful_attempts": [
+      {
+        "timestamp": "2025-06-05T23:55:58.256200",
+        "attempt_id": "2025-06-05T23:55:57.001875",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "我还是不太满意。我不需要你给我定制全新的格式（你刚才就是这么做的），下面是cursor每次工作完成自动生成的一个回复。我就要下面的这个就行。不用定制\n\n\n完美！现在总结一下本次优化成果：\n🎉 脚本法记录系统优化完成！\n✅ 解决的核心问题\n您的反馈\"基本比没有强，但与cursor实际生成的内容相比，太过潦草了\"已经完全解决！\n🚀 主要改进\n📋 内容结构化\n支持6个详细字段：问题背景、解决方案、技术要点、实现过程、遇到问题、最终结果\n自动解析结构化输入，智能格式化输出\n🎨 视觉体验升级\nemoji图标增强可读性\n清晰的层次结构\n专业的Markdown格式\n🔧 技术实现增强\nparse_detailed_summary() - 解析结构化输入\ngenerate_detailed_summary() - 生成详细记录\n兼容简单输入模式\n📚 完整的使用指南\n详细的提示词模板\n具体的使用示例\n字段说明和格式要求\n🎯 现在的记录效果\n从之前的：> \"测试脚本法记录功能\"变成了：> 包含问题背景、解决方案、技术要点、最终结果的完整专业记录\n📋 推荐使用方式\ntext\nApply to my-log.md\n[您的任务]。完成后记录：\npython auto_work_logger.py \"问题背景：XXX；解决方案：XXX；技术要点：XXX；最终结果：XXX\"\n现在这个\"脚本法\"记录系统已经可以生成与cursor实际工作内容匹配的丰富、详细、专业的工作记录了！🎉",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "完成工作后，请调用以下命令记录本次工作总结：\npython auto_work_logger.py \"本次工作的简要总结\"\n\n【项目：injection】\n我还是不太满意。我不需要你给我定制全新的格式...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:01:27.764539",
+        "attempt_id": "2025-06-06T00:01:26.568239",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "你曾经给我 推荐过三种提示词，如截图所示，你在修改了几版脚本后，是否还需要对这三类提示词做出修改。抑或不用修改，请给我个确认。",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "完成工作后，请调用以下命令记录本次工作总结：\npython auto_work_logger.py \"本次工作的简要总结\"\n\n【项目：injection】\n你曾经给我 推荐过三种提示词，如截图所示，你...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:08:42.317573",
+        "attempt_id": "2025-06-06T00:08:41.097248",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "你刚才的记录更新，把我以前的记录都给清除了，这是个大事故",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:11:01.139522",
+        "attempt_id": "2025-06-06T00:10:59.894197",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "脑图开发日志.md不是我们的原来的文件。我们原来的文件，就是my-log.md",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:18:54.538025",
+        "attempt_id": "2025-06-06T00:18:53.305960",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "刚才发生数据丢失的时候，是我切换项目的时候。",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:24:20.032614",
+        "attempt_id": "2025-06-06T00:24:18.793414",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "回到工作记录，我看了一下我们的脚本生成的工作记录，主要内容都有。但是，就是格式对人不友好。下面我会把脚本生成的格式和cursor原始的格式做一个对比。我已经强调了，最好能在格式和内容上和原始的生成的内容一致。现在做到了内容一致，格式不同。\n\n1. 原始cursor格式\n看到了重要线索！**数据丢失发生在切换项目时**。这解释了问题的真正原因！\n\n让我检查记录脚本的项目检测逻辑：\nRead file: auto_work_logger.py\n发现问题了！让我检查项目检测逻辑的完整代码：\nRead file: auto_work_logger.py\n现在我需要检查初始化部分的日志文件路径设置：\nRead file: auto_work_logger.py\n发现问题了！我发现了数据丢失的真正原因：\n\n## 🚨 **数据丢失真相大白**\n\n### 🔍 **问题分析**\n\n看代码逻辑，脚本本身没有问题！问题出在其他地方：\n\n1. **日志文件路径固定** - `self.log_file = r\"d:\\ai-projects\\my-log.md\"` 是固定的，不会因为项目切换而改变\n2. **读取和追加逻辑正确** - `existing_content = self.read_existing_log()` 然后 `existing_content + \"\\n\" + summary`\n3. **只有文件为空时才添加header** - 只有 `not existing_content.strip()` 时才重新初始化\n\n### 💡 **真正的原因**\n\n根据您说\"数据丢失发生在切换项目时\"，我怀疑问题可能是：\n\n1. **之前脚本的某个版本有bug** - 在我们修复过程中，某个临时版本可能有问题\n2. **文件被意外删除或覆盖** - 在项目切换过程中，某些操作可能影响了文件\n3. **并发写入问题** - 如果同时运行了多个脚本实例\n\n让我检查一下是否有其他可能的原因。先测试一下当前脚本在项目切换时的行为：\n```bash\ncd ../nodemind && python ../injection/auto_work_logger.py \"测试从injection切换到nodemind项目的记录功能\"\n```\n```bash\ncd ../nodemind\n```\n```bash\npython ../injection/auto_work_logger.py \"测试从injection切换到nodemind项目的记录功能\"\n```\n```bash\ncd ../injection\n```\n```bash\npython auto_work_logger.py \"回到injection项目测试记录功能\"\n```\n```bash\npowershell \"Get-Content 'd:\\ai-projects\\my-log.md' -Tail 10\"\n```\n好的！现在测试证明**当前脚本在项目切换时工作正常**：\n\n1. ✅ 从injection→nodemind→injection切换正常\n2. ✅ 项目检测正确（`nodemind(Node.js)` 和 `injection`）\n3. ✅ 内容正常追加，没有覆盖现有记录\n\n## 🔍 **数据丢失事故的可能原因**\n\n既然当前脚本工作正常，那数据丢失可能是因为：\n\n### 1. **之前版本的脚本有bug**\n在我们开发过程中，某个临时版本可能有问题。让我检查一下脚本的修改历史。\n\n### 2. **`read_existing_log()` 在某种情况下失败**\n可能在某次运行时，这个函数返回了空字符串，导致脚本以为文件是空的。\n\n让我增强脚本的安全性：\n现在记录这次问题排查的总结：\n```bash\npython auto_work_logger.py \"🔍 数据丢失事故深度排查完成！✅ 关键发现：当前脚本逻辑完全正确，项目切换功能正常。通过测试验证injection⇄nodemind切换时记录功能工作正常，项目识别准确。💡 推测原因：数据丢失可能发生在之前开发过程中的某个临时版本，而非当前稳定版本。🛡️ 预防措施：增强了read_existing_log()的安全检查，现在会检测文件损坏并发出警告。🎯 结论：当前系统已经安全可靠，可以放心使用。真相是之前某个开发阶段的bug导致了一次性数据丢失，但现在已经修复并加强了保护机制。\"\n```\n## 🎯 **数据丢失事故调查结论**\n\n### ✅ **调查结果**\n\n通过深度分析和实际测试，我确认：\n\n1. **当前脚本逻辑完全正确** - 项目切换功能正常工作\n2. **实际测试验证** - `injection ⇄ nodemind` 切换时记录功能完全正常 \n3. **项目识别准确** - 能正确识别不同项目类型\n\n### 💡 **数据丢失的真正原因**\n\n**推测**：数据丢失很可能发生在我们之前开发过程中的某个临时版本，当时的脚本可能有bug，而不是当前的稳定版本问题。\n\n### 🛡️ **已实施的预防措施**\n\n1. **增强安全检查** - `read_existing_log()` 现在会检测文件损坏\n2. **状态警告** - 如果检测到异常会发出警告\n3. **错误日志** - 更详细的错误信息记录\n\n### 🔍 **从注入诊断日志的真正启示**\n\n回顾注入诊断日志，真正的问题不是数据丢失机制，而是：\n- **注入可能没有真正成功** - 那些\"成功\"的记录实际上命令没有进入Cursor\n- **工作总结请求可能没有被Cursor接收到** - 所以没有生成相应的记录\n\n### 🎉 **当前状态**\n\n✅ **系统现在完全安全可靠**  \n✅ **所有功能经过测试验证**  \n✅ **增强了错误检测和预防机制**  \n\n**结论**：这是一次一次性的事故，现在系统已经加固，可以放心使用！🚀\n\n2. 脚本生成的格式\n\n【injection】工作记录 - 2025-06-06 00:20:20\n数据丢失事故深度排查完成！ 关键发现：当前脚本逻辑完全正确，项目切换功能正常。通过测试验证injectionnodemind切换时记录功能工作正常，项目识别准确。 推测原因：数据丢失可能发生在之前开发过程中的某个临时版本，而非当前稳定版本。 预防措施：增强了read_existing_log()的安全检查，现在会检测文件损坏并发出警告。 结论：当前系统已经安全可靠，可以放心使用。真相是之前某个开发阶段的bug导致了一次性数据丢失，但现在已经修复并加强了保护机制。\n完成时间\n2025-06-06 00:20:20",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:31:53.259709",
+        "attempt_id": "2025-06-06T00:31:52.043352",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "我们针对这次灾难性的数据丢失事件，原因并没有真正找到。\n1. 我估计可能是多个输入源同时向一个文档内执行写入造成的。\n2. 立刻设计一个双文档备份的方案。备份的动作可以在第一个文档写入后开始。而不必同时开始。",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:36:52.951363",
+        "attempt_id": "2025-06-06T00:36:51.705898",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "还是记录格式问题；\n1. 这是cursor原始输入出；\n\n🎉 双文档备份方案完成！\n✅ 成功解决并发写入问题\n通过测试验证，新的双文档备份方案完美解决了数据丢失问题：\n🔒 核心安全机制\n原子写入 - 使用临时文件+原子替换，避免写入过程中的数据损坏\n文件锁保护 - 检测并处理文件被占用的情况\n自动重试 - 失败时递增延迟重试，最多3次\n双重备份 - 主文档成功后立即同步备份\n📊 并发测试结果\n5个线程同时写入：所有操作最终都成功完成\n冲突处理：自动检测到文件锁冲突并重试\n自动恢复：当主文档写入失败时，成功从备份恢复\n数据完整性：主文档和备份文档内容完全一致\n🛡️ 防护效果\n解决了数据丢失的根本原因 - 多个cursor会话并发写入\n提供了双重保障 - 主文档 + 备份文档\n自动故障恢复 - 从备份自动恢复损坏的主文档\n格式优化 - 保持cursor原始回复的自然格式\n🎯 使用体验\n现在用户可以：\n放心使用多个cursor会话 - 不用担心数据丢失\n享受自然的格式 - 记录内容与cursor原始回复格式一致\n自动故障处理 - 系统会自动处理并发冲突和恢复\n这个双文档备份方案彻底解决了灾难性数据丢失问题！ 🚀✨\n\n\n2. 这是脚本的记录；\n【injection】工作记录 - 2025-06-06 00:33:14\n工作内容\n双文档备份方案测试：这是一个测试记录，用于验证新的双文档备份机制是否正常工作。\n完成时间\n2025-06-06 00:33:14\n\n\n【injection】工作记录 - 2025-06-06 00:33:41\n工作内容\n线程3 - 第1次写入测试 - 时间戳: 1749141221.9081933\n完成时间\n2025-06-06 00:33:41\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程4 - 第2次写入测试 - 时间戳: 1749141222.0367203\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程1 - 第2次写入测试 - 时间戳: 1749141222.1454422\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程5 - 第3次写入测试 - 时间戳: 1749141222.2744281\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程3 - 第2次写入测试 - 时间戳: 1749141222.3829067\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程2 - 第3次写入测试 - 时间戳: 1749141222.5146375\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程1 - 第3次写入测试 - 时间戳: 1749141222.6076872\n完成时间\n2025-06-06 00:33:42\n\n\n【injection】工作记录 - 2025-06-06 00:33:42\n工作内容\n线程3 - 第3次写入测试 - 时间戳: 1749141222.6225753\n完成时间\n2025-06-06 00:33:42\n\n\n\n\n【injection】 - 2025-06-06 00:33:55\n双文档备份方案实施完成！ 核心功能：解决了多个cursor会话同时写入导致的数据丢失问题。 并发保护：使用临时文件+原子替换+重试机制，确保写入安全。 双重保障：主文档写入成功后立即同步备份文档，数据安全性大幅提升。 测试验证：通过5线程并发写入测试，系统能够正确处理文件锁冲突并自动重试。 自动恢复：当主文档写入失败时，自动从备份文档恢复，保证数据不丢失。这个方案彻底解决了之前的灾难性数据丢失问题！\n\n我很不满意",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:38:08.673397",
+        "attempt_id": "2025-06-06T00:38:07.445881",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "这种问题的原因无非是两个\n1. 你的记录脚本问题；\n2. 我的提示词模板的问题：你改了脚本，我的提示词没变。\n认真给我一个整改报告。",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:41:52.181682",
+        "attempt_id": "2025-06-06T00:41:50.970003",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "下面是刚刚生成的报告；\n2025-06-06 00:38:08 (Cursor - 项目：injection)\n这种问题的原因无非是两个\n你的记录脚本问题；\n我的提示词模板的问题：你改了脚本，我的提示词没变。\n认真给我一个整改报告。\n🎯 格式整改测试\n看到了格式问题！我来给您完整的整改方案：\n🔍 问题分析\n脚本仍在画蛇添足\n破坏cursor原始格式美感  \n需要完全透明处理\n✅ 整改措施\n彻底移除项目标识 - cursor输出完全原样保存\n保持自然流动 - 不打断markdown结构\n脚本完全隐身 - 用户感受不到脚本存在\n现在的效果就像直接复制粘贴cursor回复一样自然！ 🎨\n【injection】工作记录 - 2025-06-06 00:39:35\n工作内容\n看到了！您说得完全正确，我理解您的不满。问题很明显：完美的格式整改完成！ 脚本问题已修复：cursor输出现在完全透明保存，不添加任何项目标识或格式化内容，保持原始markdown结构的自然流动。 提示词评估完成：当前提示词无需修改，与新脚本功能完美匹配。 最终效果：记录内容就像直接复制粘贴cursor回复一样自然，用户完全感受不到脚本存在，彻底解决格式不友好问题！\n完成时间\n2025-06-06 00:39:35",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:46:26.235287",
+        "attempt_id": "2025-06-06T00:46:25.009843",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "我发现你上次的工作记录，脚本没有记录到文档，你查一下代码吧",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:49:18.792955",
+        "attempt_id": "2025-06-06T00:49:17.552088",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "🔍 问题分析完成\n我找到问题了！脚本本身功能正常，但您说的是上次的工作记录没有被脚本记录。\n📋 问题背景\n根据日志显示，最后一条记录是：\n\ntext\nApply to 注入失败诊断_20250...\n# 2025-06-06 00:46:25 (Cursor - 项目：injection)\n我发现你上次的工作记录，脚本没有记录到文档，你查一下代码吧\n这条记录不是脚本格式，而是注入工具的格式！\n💡 问题原因\n查看诊断日志发现：found_in_target: False - 说明注入命令没有真正进入Cursor聊天框，而是被注入工具直接写入了日志文件。\n🔧 根本问题\n注入失败 - 命令没有真正进入Cursor\n误写日志 - 注入工具把失败的命令当作时间戳记录写入了my-log.md\n脚本未执行 - 因为注入失败，脚本根本没有被调用\n✅ 解决方案\n现在脚本功能已确认正常！问题出在注入工具的成功判断逻辑上。🎯 当前状态：工作记录脚本功能完全正常，可以安全使用！\n\n你给我的格式，差的太多了。\n\n【injection】工作记录 - 2025-06-06 00:46:55\n工作内容\n测试脚本记录功能是否正常\n完成时间\n2025-06-06 00:46:55",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:54:25.576581",
+        "attempt_id": "2025-06-06T00:54:24.351556",
+        "check_type": "INJECTION_RESULT_SUCCESS",
+        "details": {
+          "result": "SUCCESS",
+          "original_command": "我们继续讨论同步备份的方案",
+          "found_in_clipboard": true,
+          "found_in_target": false,
+          "clipboard_content_preview": "任务完成后，请执行工作记录：\n1. 直接复制您生成的完整回复内容（包含emoji、格式等）\n2. 调用命令：python auto_work_logger.py \"完整的回复内容\"  \n3. 或使用结...",
+          "target_control_preview": null
+        }
+      }
+    ],
+    "fallback_to_note_records": [],
+    "target_window_checks": [
+      {
+        "timestamp": "2025-06-05T23:55:57.003924",
+        "attempt_id": "2025-06-05T23:55:57.002961",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-05T23:55:57.146122",
+        "attempt_id": "2025-06-05T23:55:57.002961",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:01:26.571251",
+        "attempt_id": "2025-06-06T00:01:26.569309",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:01:26.701340",
+        "attempt_id": "2025-06-06T00:01:26.569309",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:08:41.100357",
+        "attempt_id": "2025-06-06T00:08:41.098249",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:08:41.229862",
+        "attempt_id": "2025-06-06T00:08:41.098249",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:10:59.896511",
+        "attempt_id": "2025-06-06T00:10:59.895705",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:11:00.040495",
+        "attempt_id": "2025-06-06T00:10:59.895705",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:18:53.308986",
+        "attempt_id": "2025-06-06T00:18:53.307995",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:18:53.448762",
+        "attempt_id": "2025-06-06T00:18:53.307995",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:24:18.795446",
+        "attempt_id": "2025-06-06T00:24:18.794401",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:24:18.934629",
+        "attempt_id": "2025-06-06T00:24:18.794401",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:31:52.045378",
+        "attempt_id": "2025-06-06T00:31:52.044352",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:31:52.185726",
+        "attempt_id": "2025-06-06T00:31:52.044352",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:36:51.707893",
+        "attempt_id": "2025-06-06T00:36:51.706945",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:36:51.848074",
+        "attempt_id": "2025-06-06T00:36:51.706945",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:38:07.448842",
+        "attempt_id": "2025-06-06T00:38:07.446848",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:38:07.587401",
+        "attempt_id": "2025-06-06T00:38:07.446848",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:41:50.972015",
+        "attempt_id": "2025-06-06T00:41:50.970979",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:41:51.113423",
+        "attempt_id": "2025-06-06T00:41:50.970979",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:46:25.012976",
+        "attempt_id": "2025-06-06T00:46:25.010810",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:46:25.152668",
+        "attempt_id": "2025-06-06T00:46:25.010810",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:49:17.554099",
+        "attempt_id": "2025-06-06T00:49:17.553107",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:49:17.695665",
+        "attempt_id": "2025-06-06T00:49:17.553107",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:54:24.353786",
+        "attempt_id": "2025-06-06T00:54:24.352779",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:54:24.500564",
+        "attempt_id": "2025-06-06T00:54:24.352779",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:57:22.050096",
+        "attempt_id": "2025-06-06T00:57:22.048095",
+        "check_type": "TARGET_WINDOW_CHECK",
+        "details": {
+          "target_window_exists": 1,
+          "target_window_visible": 1,
+          "target_window_title": "Cursor"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:57:22.193103",
+        "attempt_id": "2025-06-06T00:57:22.048095",
+        "check_type": "WINDOW_ACTIVATION",
+        "details": {
+          "target_window": 591900,
+          "current_foreground": 329760,
+          "activation_success": false
+        }
+      }
+    ],
+    "calibration_status_checks": [
+      {
+        "timestamp": "2025-06-05T23:55:57.001875",
+        "attempt_id": "2025-06-05T23:55:57.001875",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 632,
+          "command_preview": "我还是不太满意。我不需要你给我定制全新的格式（你刚才就是这么做的），下面是cursor每次工作完成自..."
+        }
+      },
+      {
+        "timestamp": "2025-06-05T23:55:57.002961",
+        "attempt_id": "2025-06-05T23:55:57.002961",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 632,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:01:26.568239",
+        "attempt_id": "2025-06-06T00:01:26.568239",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 63,
+          "command_preview": "你曾经给我 推荐过三种提示词，如截图所示，你在修改了几版脚本后，是否还需要对这三类提示词做出修改。抑..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:01:26.569309",
+        "attempt_id": "2025-06-06T00:01:26.569309",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 63,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:08:41.097248",
+        "attempt_id": "2025-06-06T00:08:41.097248",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 28,
+          "command_preview": "你刚才的记录更新，把我以前的记录都给清除了，这是个大事故"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:08:41.098249",
+        "attempt_id": "2025-06-06T00:08:41.098249",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 28,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:10:59.894197",
+        "attempt_id": "2025-06-06T00:10:59.894197",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 39,
+          "command_preview": "脑图开发日志.md不是我们的原来的文件。我们原来的文件，就是my-log.md"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:10:59.895705",
+        "attempt_id": "2025-06-06T00:10:59.895705",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 39,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:18:53.306899",
+        "attempt_id": "2025-06-06T00:18:53.305960",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 22,
+          "command_preview": "刚才发生数据丢失的时候，是我切换项目的时候。"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:18:53.307995",
+        "attempt_id": "2025-06-06T00:18:53.307995",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 22,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:24:18.793414",
+        "attempt_id": "2025-06-06T00:24:18.793414",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 2804,
+          "command_preview": "回到工作记录，我看了一下我们的脚本生成的工作记录，主要内容都有。但是，就是格式对人不友好。下面我会把..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:24:18.794401",
+        "attempt_id": "2025-06-06T00:24:18.794401",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 2804,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:31:52.043352",
+        "attempt_id": "2025-06-06T00:31:52.043352",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 104,
+          "command_preview": "我们针对这次灾难性的数据丢失事件，原因并没有真正找到。\n1. 我估计可能是多个输入源同时向一个文档内..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:31:52.044352",
+        "attempt_id": "2025-06-06T00:31:52.044352",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 104,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:36:51.705898",
+        "attempt_id": "2025-06-06T00:36:51.705898",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 1760,
+          "command_preview": "还是记录格式问题；\n1. 这是cursor原始输入出；\n\n🎉 双文档备份方案完成！\n✅ 成功解决并发..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:36:51.706945",
+        "attempt_id": "2025-06-06T00:36:51.706945",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 1760,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:38:07.445881",
+        "attempt_id": "2025-06-06T00:38:07.445881",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 66,
+          "command_preview": "这种问题的原因无非是两个\n1. 你的记录脚本问题；\n2. 我的提示词模板的问题：你改了脚本，我的提示..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:38:07.446848",
+        "attempt_id": "2025-06-06T00:38:07.446848",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 66,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:41:50.970003",
+        "attempt_id": "2025-06-06T00:41:50.970003",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 546,
+          "command_preview": "下面是刚刚生成的报告；\n2025-06-06 00:38:08 (Cursor - 项目：injec..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:41:50.970979",
+        "attempt_id": "2025-06-06T00:41:50.970979",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 546,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:46:25.009843",
+        "attempt_id": "2025-06-06T00:46:25.009843",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 29,
+          "command_preview": "我发现你上次的工作记录，脚本没有记录到文档，你查一下代码吧"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:46:25.010810",
+        "attempt_id": "2025-06-06T00:46:25.010810",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 29,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:49:17.552088",
+        "attempt_id": "2025-06-06T00:49:17.552088",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 530,
+          "command_preview": "🔍 问题分析完成\n我找到问题了！脚本本身功能正常，但您说的是上次的工作记录没有被脚本记录。\n📋 问题..."
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:49:17.553107",
+        "attempt_id": "2025-06-06T00:49:17.553107",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 530,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:54:24.351556",
+        "attempt_id": "2025-06-06T00:54:24.351556",
+        "check_type": "USER_INTENT_INJECT",
+        "details": {
+          "operation": "Alt+Enter pressed",
+          "command_length_before": 13,
+          "command_preview": "我们继续讨论同步备份的方案"
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:54:24.352779",
+        "attempt_id": "2025-06-06T00:54:24.352779",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 13,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      },
+      {
+        "timestamp": "2025-06-06T00:57:22.048095",
+        "attempt_id": "2025-06-06T00:57:22.048095",
+        "check_type": "INJECTION_ATTEMPT_START",
+        "details": {
+          "command_length": 20,
+          "has_target_window": true,
+          "has_target_position": true,
+          "has_log_file": true
+        }
+      }
+    ]
+  }
+}

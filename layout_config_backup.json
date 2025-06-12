@@ -1,0 +1,34 @@
+{
+  "main_splitter_sizes": [212, 802, 376],
+  "vertical_splitter_sizes": [838, 209],
+  "lane_splitter_sizes": [269, 268, 268, 268, 269],
+  "md_reader_visible": true,
+  "current_tab": 0,
+  "current_command_tab": 0,
+  "config": {
+    "left_panel_width": 212,
+    "md_reader_width": 376,
+    "list_area_height": 209,
+    "min_widths": {
+      "left_panel": 120,
+      "command_area": 300,
+      "md_reader": 200
+    },
+    "min_heights": {
+      "command_area": 250,
+      "list_area": 120
+    },
+    "ratios": {
+      "left_panel_ratio": 0.15,
+      "md_reader_ratio": 0.27,
+      "list_area_ratio": 0.19
+    }
+  },
+  "window_size": {
+    "width": 1414,
+    "height": 1080
+  },
+  "timestamp": "2025-01-08T19:10:00",
+  "version": "1.1",
+  "layout_type": "user_preferred_default"
+} 
